@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Opinió </title>
+<link rel="stylesheet" href="./estils/styles.css" />
+<link rel="stylesheet" href="./estils/desplegable.css" />
+
+
+</head> 
+<body class="fonsOpi">
+<div class="header"<h1 align="center"> El viatge de Chihiro</h1></div>
+<div class="dropdown">
+  <button class="dropbtn">Menú</button>
+  <div class="dropdown-content">
+  <a href="./index.html">Inici</a>
+  <a href="./director.html">Director</a>
+  <a href="./personatges.html">Personatges</a>
+  <a href="./onveure-la.html">On veure-la</a>
+  <a href="./media.html" >Imatges</a>
+  <a href="./opinio.html" >Opinio</a>
+  <a href="./reflexions.html">Reflexions</a>
+  <a href="./altrespeliculesrelacionades.html">Links d'intrés</a>
+
+  </div>
+</div>
+
+
+<form action="/action_page.php" method="post" >  
+  <div class="main ">
+  <fieldset style="background-color: rgb(183, 184, 181);">
+    <div>
+      <h3>Dades </h3>
+      <p>Nom*</p> 
+      <input type="text" name= "noms" id="noms" autofocus required> <!-- Com a millora he afegir * per indicar que és un camp requerit  -->
+      <p>Cognoms*</p> <!-- Com a millora he afegir * per indicar que és un camp requerit  -->
+      <input type="text" name= "cognoms" id="cognoms" required>
+      <p>Correu electronic*</p> <!-- Com a millora he afegir * per indicar que és un camp requerit  -->
+        <input type="text" name= "email" id="email" placeholder="usuari@usuari.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+      </div>
+      
+      
+      
+  </div>
+  </fieldset>
+  <br>
+</form>
+<form action="/action_page.php" method="post" >  
+  <div class="main ">
+  <fieldset style="background-color: rgb(181, 184, 184);">
+  <div>
+    <h3>Sobre la pel·lícula</h3>
+  
+      <p>Valora del 1 al 5 la pel·lícula. On 1 és que t'agradat poc i 5 molt.</p>
+        <select name="incripció">
+            <option value="1"></option>
+            <option value="2">1</option>
+            <option value="3">2</option>
+            <option value="4">3</option>
+            <option value="5">4</option>
+            <option value="6">5</option>
+        </select>
+      <p>Creus que és una pel·lícula adecuada per treballar amb les nenes i nens?</p>
+      <select name="incripció">
+        <option value="1"></option>
+        <option value="2">Sí</option>
+        <option value="3">No</option>
+        <option value="4">No ho sé</option>
+      </select>
+      
+      <p>Què t'agradat més de la pel·lícula? (Pots seleccionar més d'una opció) <br>
+      <label for="agradat">Tria les opcions:</label> <br>
+        <select id="agradat" name="agradat" size="5" multiple>
+          <option value="produccio">La producció</option>
+          <option value="argument">L'argument</option>
+          <option value="animaco">L'animació (estetica) </option>
+          <option value="musica">La banda sonora</option>
+          <option value="doblatge">El doblatge</option>      
+        </select>
+      </p>
+    
+      <label for="comentari">Explica breument el simbolisme que treus de la pel·lícula</label>
+      <textarea id ="comentari" name="missatge" rows="10" cols="40"> 
+        Escriu el teu comentari
+      </textarea>  <!-- placeholder -->
+    </div>
+  </fieldset> <br>
+  
+   <div>
+    <!-- he creat els botons d'enviar i borrar forulari com a millora  -->
+    
+    <input type="submit" value="Enviar formulari" /> 
+    <input type="reset" value="Borra el formulari"/>
+    
+  </div>
+</form> 
+
+</div>
+<div>
+  <footer> <!-- peu de pagina  -->
+    <p>Autora: Mercè Perxachs<br></p>
+    
+  </footer>
+
+</body>
+
+  
